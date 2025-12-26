@@ -7,6 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.pabamateri.p_cons1.Cons1Activity
+import com.example.pabamateri.p_cons2.Cons2Activity
+import com.example.pabamateri.p_explisit.ExplisitActivity
 import com.example.pabamateri.p_layout.LayoutActivity
 
 class MainActivity : AppCompatActivity() {
