@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PabaMateri</string>
+
+    <!--layout-->
+    <string name="deskripsi">
+        Berdirinya Universitas Kristen Petra tidak lepas dari peran Perhimpunan Pendidikan dan Pengajaran Kristen Petra (PPPK Petra). PPPK Petra merupakan sebuah perhimpunan Kristen yang didirikan pada tahun 1951 yang bertujuan untuk menyelenggarakan pendidikan dari tingkat taman kanak-kanak hingga pendidikan menengah. Keinginan untuk memberikan kesempatan yang lebih luas untuk mengenyam pendidikan yang lebih tinggi, mendorong para pengurus perhimpunan ini untuk mendirikan sebuah perguruan tinggi.
+    </string>
+
 </resources>

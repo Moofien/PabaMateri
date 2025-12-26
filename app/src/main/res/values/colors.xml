@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="greenLight">#E8F5E9</color>
+    <color name="blue">#2196F3</color>
+    <color name="grayLight">#F5F5F5</color>
+    <color name="grayVeryLight">#FAFAFA</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--cons2-->
+    <color name="button_selected">#2196F3</color>s
+    <color name="button_unselected">#9E9E9E</color>
+
+
 </resources>

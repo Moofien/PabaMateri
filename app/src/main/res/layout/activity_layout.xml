@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Bagian Header -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/petra" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/logopetra"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="16dp"
+                android:drawableStart="@drawable/profile"
+                android:drawablePadding="4dp"
+                android:padding="6dp"
+                android:background="#010293"
+                android:gravity="center_vertical"
+                android:text="PROFILE"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="UNIVERSITAS KRISTEN PETRA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/deskripsi"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    android:text="DETAIL"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    android:text="JENIS" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Perguruan Tinggi Swasta" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    android:text="Didirikan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:text="2 September 1961" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    android:text="Lokasi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Jl. Siwalankerto No. 121-131, Wonocolo, Surabaya, Jawa Timur, Indonesia 60236" />
+
+            </TableRow>
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="8dp">
+            <!--            android:background="@drawable/table_border">-->
+
+            <!-- Judul -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Rektor"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <!-- Data Rektor -->
+            <TableRow>
+                <TextView android:text="1." android:padding="4dp"/>
+                <TextView android:text="drg. Tan Tjiauw Djie (1961–1966)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="2." android:padding="4dp"/>
+                <TextView android:text="Letkol (Tituler) Soenaryo (1966)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="3." android:padding="4dp"/>
+                <TextView android:text="Prof. Dr. J.E. Sahetapy, S.H., M.A. (1966–1969)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="4." android:padding="4dp"/>
+                <TextView android:text="dr. O.F. Patty (1969–1984)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="5." android:padding="4dp"/>
+                <TextView android:text="Dr. Ir. Widoyo Totosucipto (1984–1988)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="6." android:padding="4dp"/>
+                <TextView android:text="Drs. Wasis Sastroredjo (1988–1997)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="7." android:padding="4dp"/>
+                <TextView android:text="Prof. Dr. Aris Pongtuluran, dr., MPH. (1997–2001)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="8." android:padding="4dp"/>
+                <TextView android:text="Dr. Ir. Takim Andriono, M.E. (2001)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="9." android:padding="4dp"/>
+                <TextView android:text="Ir. Paulus Nugraha, M.Eng., M.Sc. (2001–2009)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="10." android:padding="4dp"/>
+                <TextView android:text="Prof. Ir. Rolly Intan, M.A.Sc, Dr.Eng. (2009–2017)" android:padding="4dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="11." android:padding="4dp"/>
+                <TextView android:text="Prof. Dr. Ir. Djwantoro Hardjito, M.Eng. (2017–sekarang)" android:padding="4dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
