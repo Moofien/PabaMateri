@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
+            android:name=".p_LatFragmen.LatFragmenActivity"
+            android:exported="false" />
+        <activity
             android:name=".p_fragment.FragmentActivity"
             android:exported="false" />
         <activity
