@@ -3,16 +3,15 @@ package com.example.pabamateri
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.pabamateri.p_LatFragmen.LatFragmenActivity
 import com.example.pabamateri.p_cons1.Cons1Activity
 import com.example.pabamateri.p_cons2.Cons2Activity
 import com.example.pabamateri.p_explisit.ExplisitActivity
 import com.example.pabamateri.p_fragment.FragmentActivity
 import com.example.pabamateri.p_implisit.ImplisitActivity
 import com.example.pabamateri.p_layout.LayoutActivity
+import com.example.pabamateri.p_navigation.NavActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val btnP5 = findViewById<Button>(R.id.btn_imp)
         val btnP6 = findViewById<Button>(R.id.btn_frag)
         val btnP7 = findViewById<Button>(R.id.btn_fragLat)
+        val btnP8 = findViewById<Button>(R.id.btn_nav)
 
 
         btnP1.setOnClickListener {
@@ -53,7 +53,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnP7.setOnClickListener {
-            val intent = Intent(this, ExplisitActivity::class.java)
+            val intent = Intent(this, LatFragmenActivity::class.java)
+            startActivity(intent)
+        }
+        btnP8.setOnClickListener {
+            val intent = Intent(this, NavActivity::class.java)
             startActivity(intent)
         }
     }

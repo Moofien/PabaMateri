@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/outline_apartment_24"
+            android:title="HOME"/>
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/outline_circle_24"
+            android:title="PROFILE"/>
+        <item
+            android:id="@+id/settingFragment"
+            android:icon="@drawable/outline_ads_click_24"
+            android:title="SETTING"/>
+    </group>
+
+    <item android:title="CONFIDENTIAL">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/login"
+                    android:title="Login"/>
+            </group>
+        </menu>
+    </item>
+</menu>
