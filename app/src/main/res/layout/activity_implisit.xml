@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/implisit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnKirimPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Pesan" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm" />
+
+    <Button
+        android:id="@+id/btnSetTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Timer" />
+
+    <EditText
+        android:id="@+id/tvAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan alamat website"/>
+
+    <Button
+        android:id="@+id/btnOpenURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Website" />
+
+    <Button
+        android:id="@+id/btnSetEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Event Calendar" />
+
+    <Button
+        android:id="@+id/btnGetPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambil Foto" />
+
+    <ImageView
+        android:id="@+id/ivHasil"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
+
+

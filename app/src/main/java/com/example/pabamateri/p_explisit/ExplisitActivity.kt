@@ -75,8 +75,8 @@ class ExplisitActivity : AppCompatActivity() {
             startActivity(intentWithData)
         }
 
-        isiPegawai.add(Pegawai(1,"Anita","Test"))
-        isiPegawai.add(Pegawai(2, "Titik", "Market"))
+        isiPegawai.add(Pegawai(1,"Test","Test"))
+        isiPegawai.add(Pegawai(2, "Test2", "Market"))
 
         _btnExplisit3.setOnClickListener {
             val intentWithData = Intent(

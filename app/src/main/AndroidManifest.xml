@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
+            android:name=".p_implisit.ImplisitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImplisitActivity"
+            android:exported="false" />
+        <activity
             android:name=".p_explisit.ExplisitActivity5"
             android:exported="false" />
         <activity
