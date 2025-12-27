@@ -43,5 +43,23 @@
             android:layout_height="wrap_content"
             android:text="P_Explisit" />
 
+        <Button
+            android:id="@+id/btn_imp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_Implisit" />
+
+        <Button
+            android:id="@+id/btn_frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_Fragment" />
+
+        <Button
+            android:id="@+id/btn_fragLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_FragmentLat" />
+
     </LinearLayout>
 </ScrollView>

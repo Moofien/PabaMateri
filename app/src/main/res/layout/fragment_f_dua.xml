@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEE2AD "
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment fDua"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data akan ditampilkan di sini"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnOpenFDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buka Fragment Satu"
+        android:layout_gravity="center" />
+
+</LinearLayout>

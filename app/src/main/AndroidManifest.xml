@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
-            android:name=".p_implisit.ImplisitActivity"
+            android:name=".p_fragment.FragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".ImplisitActivity"
+            android:name=".p_implisit.ImplisitActivity"
             android:exported="false" />
         <activity
             android:name=".p_explisit.ExplisitActivity5"
