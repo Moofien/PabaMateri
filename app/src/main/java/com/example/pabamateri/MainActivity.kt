@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         val btnP9 = findViewById<Button>(R.id.btn_listView)
         val btnP10 = findViewById<Button>(R.id.btn_recyclerView)
         val btnP11 = findViewById<Button>(R.id.btn_sharedPref)
+        val btnP12 = findViewById<Button>(R.id.btn_FireBase)
+
 
         btnP1.setOnClickListener {
             val intent = Intent(this, LayoutActivity::class.java)
@@ -74,6 +76,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnP11.setOnClickListener {
+            val intent = Intent(this, SharedPrefActivity::class.java)
+            startActivity(intent)
+        }
+        btnP12.setOnClickListener {
             val intent = Intent(this, SharedPrefActivity::class.java)
             startActivity(intent)
         }

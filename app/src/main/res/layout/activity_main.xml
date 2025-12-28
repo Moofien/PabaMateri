@@ -85,6 +85,11 @@
             android:layout_height="wrap_content"
             android:text="P_SharedPreference" />
 
+        <Button
+            android:id="@+id/btn_FireBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_FireBase" />
 
     </LinearLayout>
 </ScrollView>

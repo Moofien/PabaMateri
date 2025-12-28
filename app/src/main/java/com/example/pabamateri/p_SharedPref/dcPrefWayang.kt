@@ -1,6 +1,5 @@
 package com.example.pabamateri.p_SharedPref
 
-
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 

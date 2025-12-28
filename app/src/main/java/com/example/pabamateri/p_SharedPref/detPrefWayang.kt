@@ -9,7 +9,6 @@ import com.squareup.picasso.Picasso
 import com.example.pabamateri.R
 import com.example.pabamateri.p_RecyclerView.dcWayang
 
-
 class detPrefWayang : AppCompatActivity() {
     private lateinit var _detFotoWayang: ImageView
     private lateinit var _detNamaWayang: TextView

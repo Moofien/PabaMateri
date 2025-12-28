@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.example.pabamateri.R
 
-
 class adapterRecView(private val listWayang: ArrayList<dcPrefWayang>) :
     RecyclerView.Adapter<adapterRecView.ListViewHolder>() {
 
