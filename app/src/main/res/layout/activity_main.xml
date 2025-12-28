@@ -73,5 +73,11 @@
             android:layout_height="wrap_content"
             android:text="P_ListView" />
 
+        <Button
+            android:id="@+id/btn_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_RecyclerView" />
+
     </LinearLayout>
 </ScrollView>

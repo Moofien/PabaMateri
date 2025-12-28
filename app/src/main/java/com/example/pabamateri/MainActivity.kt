@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pabamateri.p_LatFragmen.LatFragmenActivity
+import com.example.pabamateri.p_RecyclerView.RecyclerViewActivity
 import com.example.pabamateri.p_cons1.Cons1Activity
 import com.example.pabamateri.p_cons2.Cons2Activity
 import com.example.pabamateri.p_explisit.ExplisitActivity
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val btnP7 = findViewById<Button>(R.id.btn_fragLat)
         val btnP8 = findViewById<Button>(R.id.btn_nav)
         val btnP9 = findViewById<Button>(R.id.btn_listView)
-
+        val btnP10 = findViewById<Button>(R.id.btn_recyclerView)
         btnP1.setOnClickListener {
             val intent = Intent(this, LayoutActivity::class.java)
             startActivity(intent)
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnP9.setOnClickListener {
             val intent = Intent(this, ListViewActivity::class.java)
+            startActivity(intent)
+        }
+        btnP10.setOnClickListener {
+            val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
     }

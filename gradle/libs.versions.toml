@@ -14,6 +14,9 @@ constraintlayout = "2.2.1"
 nav = "2.9.5"
 safeargs = "2.7.7"
 
+#untuk p_recyclerView
+vpic = "2.8"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -27,6 +30,9 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 #untuk p_navigation
 navigation-fragment-ktx = {group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav"}
 navigation-ui-ktx = {group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav"}
+
+#untuk p_recyclerView
+picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "vpic" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
