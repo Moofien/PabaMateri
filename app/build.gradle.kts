@@ -58,4 +58,7 @@ dependencies {
 
 //    untuk p_recyclerView
     implementation(libs.picasso)
+
+//    untuk p_SharedPref
+    implementation(libs.gson)
 }

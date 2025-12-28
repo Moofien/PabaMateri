@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
+            android:name=".p_SharedPref.detPrefWayang"
+            android:exported="false" />
+        <activity
+            android:name=".p_SharedPref.SharedPrefActivity"
+            android:exported="false" />
+        <activity
             android:name=".p_RecyclerView.detWayang"
             android:exported="false" />
         <activity
