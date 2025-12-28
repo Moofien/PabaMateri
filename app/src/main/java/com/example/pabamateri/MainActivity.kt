@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pabamateri.p_Firebase.FirebaseActivity
 import com.example.pabamateri.p_LatFragmen.LatFragmenActivity
 import com.example.pabamateri.p_RecyclerView.RecyclerViewActivity
 import com.example.pabamateri.p_SharedPref.SharedPrefActivity
@@ -80,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnP12.setOnClickListener {
-            val intent = Intent(this, SharedPrefActivity::class.java)
+            val intent = Intent(this, FirebaseActivity::class.java)
             startActivity(intent)
         }
     }
