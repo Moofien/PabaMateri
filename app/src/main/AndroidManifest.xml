@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
+            android:name=".p_Room.TambahData"
+            android:exported="false" />
+        <activity
             android:name=".p_Room.RoomActivity"
             android:exported="false" />
         <activity

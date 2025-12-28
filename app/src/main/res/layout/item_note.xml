@@ -45,6 +45,8 @@
             android:src="@android:drawable/ic_menu_edit"
             app:layout_constraintEnd_toStartOf="@+id/btnDelete"
             app:layout_constraintTop_toTopOf="parent"
+            android:focusable="false"
+            android:clickable="true"
             app:tint="@color/black" />
 
         <ImageButton
@@ -55,7 +57,9 @@
             android:src="@android:drawable/ic_menu_delete"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@android:color/holo_red_dark" />
+            app:tint="@android:color/holo_red_dark"
+            android:focusable="false"
+            android:clickable="true"/>
 
         <TextView
             android:id="@+id/tvTanggal"

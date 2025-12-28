@@ -12,6 +12,7 @@ import kotlinx.coroutines.async
 import com.example.pabamateri.p_Room.database.Note
 import com.example.pabamateri.p_Room.database.NoteRoomDatabase
 import com.example.pabamateri.p_Room.Helper.DateHelper.getCurrentDate
+import kotlinx.coroutines.withContext
 
 class TambahData : AppCompatActivity() {
     var iID: Int = 0
@@ -44,8 +45,10 @@ class TambahData : AppCompatActivity() {
 
             CoroutineScope(Dispatchers.IO).async {
                 val noteItem = DB.funnoteDao().getNote(iID)
-                _etJudul.setText(noteItem.judul)
-                _etDeskripsi.setText(noteItem.deskripsi)
+                withContext(Dispatchers.Main) {
+                    _etJudul.setText(noteItem.judul)
+                    _etDeskripsi.setText(noteItem.deskripsi)
+                }
             }
         }
 
@@ -59,6 +62,7 @@ class TambahData : AppCompatActivity() {
                         tanggal
                     )
                 )
+                finish()
             }
         }
 
