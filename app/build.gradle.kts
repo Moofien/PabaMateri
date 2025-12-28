@@ -4,6 +4,7 @@ plugins {
     id("kotlin-parcelize")
     alias(libs.plugins.kotlin.safeargs)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.android.ksp)
 }
 
 android {
@@ -62,4 +63,9 @@ dependencies {
     implementation(libs.picasso)
 //    untuk p_SharedPref
     implementation(libs.gson)
+
+//    untuk p_Room
+    implementation(libs.android.room.ktx)
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
 }

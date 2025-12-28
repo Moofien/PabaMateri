@@ -91,5 +91,11 @@
             android:layout_height="wrap_content"
             android:text="P_FireBase" />
 
+        <Button
+            android:id="@+id/btn_Room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_Room" />
+
     </LinearLayout>
 </ScrollView>

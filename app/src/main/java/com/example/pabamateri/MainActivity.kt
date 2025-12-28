@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.pabamateri.p_Firebase.FirebaseActivity
 import com.example.pabamateri.p_LatFragmen.LatFragmenActivity
 import com.example.pabamateri.p_RecyclerView.RecyclerViewActivity
+import com.example.pabamateri.p_Room.RoomActivity
 import com.example.pabamateri.p_SharedPref.SharedPrefActivity
 import com.example.pabamateri.p_cons1.Cons1Activity
 import com.example.pabamateri.p_cons2.Cons2Activity
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val btnP10 = findViewById<Button>(R.id.btn_recyclerView)
         val btnP11 = findViewById<Button>(R.id.btn_sharedPref)
         val btnP12 = findViewById<Button>(R.id.btn_FireBase)
+        val btnP13 = findViewById<Button>(R.id.btn_Room)
 
 
         btnP1.setOnClickListener {
@@ -82,6 +84,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnP12.setOnClickListener {
             val intent = Intent(this, FirebaseActivity::class.java)
+            startActivity(intent)
+        }
+        btnP13.setOnClickListener {
+            val intent = Intent(this, RoomActivity::class.java)
             startActivity(intent)
         }
     }

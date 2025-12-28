@@ -5,6 +5,7 @@
     <color name="grayLight">#F5F5F5</color>
     <color name="grayVeryLight">#FAFAFA</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
 
     <!--cons2-->
     <color name="button_selected">#2196F3</color>s
