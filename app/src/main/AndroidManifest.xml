@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PabaMateri">
         <activity
+            android:name=".p_listview.ListViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".p_navigation.NavActivity"
             android:exported="false" />
         <activity

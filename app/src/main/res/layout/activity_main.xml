@@ -67,5 +67,11 @@
             android:layout_height="wrap_content"
             android:text="P_Navigation" />
 
+        <Button
+            android:id="@+id/btn_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P_ListView" />
+
     </LinearLayout>
 </ScrollView>

@@ -11,6 +11,7 @@ import com.example.pabamateri.p_explisit.ExplisitActivity
 import com.example.pabamateri.p_fragment.FragmentActivity
 import com.example.pabamateri.p_implisit.ImplisitActivity
 import com.example.pabamateri.p_layout.LayoutActivity
+import com.example.pabamateri.p_listview.ListViewActivity
 import com.example.pabamateri.p_navigation.NavActivity
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val btnP6 = findViewById<Button>(R.id.btn_frag)
         val btnP7 = findViewById<Button>(R.id.btn_fragLat)
         val btnP8 = findViewById<Button>(R.id.btn_nav)
-
+        val btnP9 = findViewById<Button>(R.id.btn_listView)
 
         btnP1.setOnClickListener {
             val intent = Intent(this, LayoutActivity::class.java)
@@ -58,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnP8.setOnClickListener {
             val intent = Intent(this, NavActivity::class.java)
+            startActivity(intent)
+        }
+        btnP9.setOnClickListener {
+            val intent = Intent(this, ListViewActivity::class.java)
             startActivity(intent)
         }
     }
