@@ -22,7 +22,7 @@ class detPrefWayang : AppCompatActivity() {
         _detNamaWayang = findViewById(R.id.detNamaWayang)
         _detDetailWayang = findViewById(R.id.detDetailWayang)
 
-        val dataIntent = intent.getParcelableExtra<dcWayang>("kirimData")
+        val dataIntent = intent.getParcelableExtra<dcPrefWayang>("kirimData")
 
         if (dataIntent != null) {
             Picasso.get()

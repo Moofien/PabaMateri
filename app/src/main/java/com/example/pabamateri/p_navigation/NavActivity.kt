@@ -56,7 +56,6 @@ class NavActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         binding!!.navView.setupWithNavController(navController)
 
-        // Setup AppBarConfiguration
         appBarConfiguration = AppBarConfiguration(
             navGraph = navController.graph,
             drawerLayout = binding!!.drawer

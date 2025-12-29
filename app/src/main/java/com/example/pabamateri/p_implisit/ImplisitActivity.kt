@@ -22,7 +22,6 @@ class ImplisitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_implisit)
 
-        // --- Inisialisasi View ---
         val btnKirimPesan: Button = findViewById(R.id.btnKirimPesan)
         val btnSetAlarm: Button = findViewById(R.id.btnSetAlarm)
         val btnSetTimer: Button = findViewById(R.id.btnSetTimer)
@@ -32,7 +31,6 @@ class ImplisitActivity : AppCompatActivity() {
         val btnGetPhoto: Button = findViewById(R.id.btnGetPhoto)
         val ivHasil: ImageView = findViewById(R.id.ivHasil)
 
-        // --- 1. Kirim Pesan (Sesuai PDF Topik 1) ---
         btnKirimPesan.setOnClickListener {
             val sendIntent = Intent().apply {
                 action = Intent.ACTION_SEND
@@ -40,11 +38,10 @@ class ImplisitActivity : AppCompatActivity() {
                 putExtra("sms_body", "ISI SMS")
                 type = "text/plain"
             }
-            // Menggunakan resolveActivity sesuai PDF
+
             if (sendIntent.resolveActivity(packageManager) != null) {
                 startActivity(sendIntent)
             } else {
-                // Fallback jika resolveActivity gagal (biasanya di Emulator/Android 11+)
                 try {
                     startActivity(Intent.createChooser(sendIntent, "Pilih Aplikasi Pesan"))
                 } catch (e: Exception) {
@@ -53,7 +50,6 @@ class ImplisitActivity : AppCompatActivity() {
             }
         }
 
-        // --- 2. Set Alarm (Sesuai PDF Topik 2) ---
         btnSetAlarm.setOnClickListener {
             val alarmIntent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
                 putExtra(AlarmClock.EXTRA_MESSAGE, "COBA ALARM")
@@ -64,11 +60,10 @@ class ImplisitActivity : AppCompatActivity() {
             if (alarmIntent.resolveActivity(packageManager) != null) {
                 startActivity(alarmIntent)
             } else {
-                startActivity(alarmIntent) // Paksa jalankan meski resolve null (untuk emulator)
+                startActivity(alarmIntent)
             }
         }
 
-        // --- 3. Set Timer (Sesuai PDF Topik 2) ---
         btnSetTimer.setOnClickListener {
             val timerIntent = Intent(AlarmClock.ACTION_SET_TIMER).apply {
                 putExtra(AlarmClock.EXTRA_MESSAGE, "COBA TIMER")
@@ -78,11 +73,10 @@ class ImplisitActivity : AppCompatActivity() {
             if (timerIntent.resolveActivity(packageManager) != null) {
                 startActivity(timerIntent)
             } else {
-                startActivity(timerIntent) // Paksa jalankan
+                startActivity(timerIntent)
             }
         }
 
-        // --- 4. Buka Website (Sesuai PDF Topik 3) ---
         btnOpenURL.setOnClickListener {
             val urlText = tvAlamat.text.toString()
             val finalUrl = if (!urlText.startsWith("http")) "http://$urlText" else urlText
@@ -100,7 +94,6 @@ class ImplisitActivity : AppCompatActivity() {
             }
         }
 
-        // --- 5. Set Event Calendar (Sesuai PDF Topik 4) ---
         btnSetEvent.setOnClickListener {
             val calendar = Calendar.getInstance()
             val year = calendar.get(Calendar.YEAR)
@@ -119,7 +112,7 @@ class ImplisitActivity : AppCompatActivity() {
                         putExtra(CalendarContract.Events.EVENT_LOCATION, "Kantor")
                         putExtra(CalendarContract.Events.DESCRIPTION, "Deskripsi Meeting")
                         putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, selectedDateTime.timeInMillis)
-                        putExtra(CalendarContract.EXTRA_EVENT_END_TIME, selectedDateTime.timeInMillis + 3600000) // +1 Jam
+                        putExtra(CalendarContract.EXTRA_EVENT_END_TIME, selectedDateTime.timeInMillis + 3600000)
                     }
                     startActivity(eventIntent)
 
@@ -129,7 +122,6 @@ class ImplisitActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
-        // --- 6. Kamera (Sesuai PDF Topik 5) ---
         val cameraLauncher = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) { bitmap ->
             if (bitmap != null) {
                 ivHasil.setImageBitmap(bitmap)

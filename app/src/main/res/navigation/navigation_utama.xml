@@ -22,6 +22,7 @@
             app:enterAnim="@android:anim/fade_in" />
     </fragment>
 
+
     <fragment
         android:id="@+id/detailProfileFragment"
         android:name="com.example.pabamateri.p_navigation.DetailProfileFragment"
@@ -37,4 +38,16 @@
         android:name="com.example.pabamateri.p_navigation.SettingFragment"
         android:label="setting"
         tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/bahanFragment"
+        android:name="com.example.pabamateri.p_navigation.BahanFragment"
+        android:label="Bahan Masakan"
+        tools:layout="@layout/fragment_bahan" />
+
+    <fragment
+        android:id="@+id/keranjangFragment"
+        android:name="com.example.pabamateri.p_navigation.KeranjangFragment"
+        android:label="Keranjang Belanja"
+        tools:layout="@layout/fragment_keranjang" />
 </navigation>

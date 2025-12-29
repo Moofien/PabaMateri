@@ -87,11 +87,11 @@ class SharedPrefActivity : AppCompatActivity() {
 
     fun TampilkanData() {
         _rvWayang.layoutManager = LinearLayoutManager(this)
-        val adapterWayang = adapterRecView(arWayang)
+        val adapterWayang = adapterSharedPref(arWayang)
         _rvWayang.adapter = adapterWayang
 
         adapterWayang.setOnItemClickCallback(object :
-            adapterRecView.OnItemClickCallback {
+            adapterSharedPref.OnItemClickCallback {
 
             override fun onItemClicked(data: dcPrefWayang) {
                 val intent = Intent(this@SharedPrefActivity, detPrefWayang::class.java)

@@ -57,6 +57,8 @@
         <item>https://www.shutterstock.com/shutterstock/photos/1341605165/display_1500/stock-vector-wayang-baladewa-character-indonesian-traditional-shadow-puppet-vector-illustration-1341605165.jpg</item>
         <item>https://sarmaya.in/museum/wp-content/uploads/2022/09/Duryodhana-late-20th-century-early-21st-century-unidentified-artist-%C2%A9-Sarmaya-Arts-Foundation-1-1.jpg</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -13,6 +13,14 @@
             android:id="@+id/settingFragment"
             android:icon="@drawable/outline_ads_click_24"
             android:title="SETTING"/>
+        <item
+            android:id="@+id/bahanFragment"
+            android:icon="@drawable/home"
+            android:title="BAHAN MASAKAN"/>
+        <item
+            android:id="@+id/keranjangFragment"
+            android:icon="@drawable/cart"
+            android:title="KERANJANG BELANJA"/>
     </group>
 
     <item android:title="CONFIDENTIAL">

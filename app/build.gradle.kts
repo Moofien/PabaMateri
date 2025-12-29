@@ -68,4 +68,6 @@ dependencies {
     implementation(libs.android.room.ktx)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
+
+    implementation(libs.glide)
 }

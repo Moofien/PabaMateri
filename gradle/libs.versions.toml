@@ -27,6 +27,8 @@ gson = "2.13.2"
 googleGmsGoogleServices = "4.4.4"
 firebaseFirestore = "26.0.2"
 
+glide = "4.16.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -53,6 +55,7 @@ android-room-ktx = {group = "androidx.room", name = "room-ktx", version.ref = "r
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -64,4 +67,6 @@ google-gms-google-services = { id = "com.google.gms.google-services", version.re
 
 #untuk p_Room
 android-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+
 
